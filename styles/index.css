@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+.app::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 24px;
+  background: #F8F9FA;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  padding: 116px 180px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.titleBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 528px;
+  height: 96px;
+}
+
+.heading {
+  font-family: 'DM Sans', sans-serif;
+  height: 48px;
+  width: 528px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -3%;
+  text-align: center;
+}
+
+.titleText {
+  margin-top: 24px;
+  width: 528px;
+  height: 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+  text-align: center;
+  color: #404040;
+}
+
+.main {
+  margin: 0px auto;
+  background-image: url('../assets/World Map.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.placeBox {
+  width: 100%;
+}
+
+.img {
+  display: none;
+  width: 310px;
+  height: 202px;
+  background-image: url('../assets/World Map.png');
+  background-repeat: no-repeat;
+}
+
+.firstCard {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 498px;
+}
+
+.bigCard {
+  display: flex;
+  height: 208px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px 0px rgba(44, 59, 64, 0.15);
+}
+
+.nameCard {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  color: #0A0A0A;
+  font-family: 'DM Sans';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: -0.588px;
+}
+
+.flag {
+  width: 40px;
+  height: 40px;
+}
+
+.secondCard {
+  margin-top: 24px;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.smallCard {
+  width: 344px;
+  height: 208px;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 0px 40px 0px rgba(44, 59, 64, 0.15);
+}
+
+.contact {
+  color: #0A0A0A;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.198px;
+}
+
+.info {
+  color: #9E9E9E;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 24px;
+  letter-spacing: -0.198px;
+  margin-top: 12px;
+}
+
+.boxinfo {
+  width: 296px;
+  height: 108px;
+}
+
+@media (max-width: 1024px) {
+  .app {
+    padding: 40px 40px;
+    overflow: hidden;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .titleText {
+    font-size: 16px;
+  }
+  .bigCard {
+    padding: 16px;
+  }
+  .nameCard {
+    font-size: 20px;
+    padding: 0;
+    height: 32px;
+  }
+  .contact {
+    margin-top: -5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+  }
+  .flag {
+    width: 32px;
+    height: 32px;
+  }
+  .info {
+    margin-top: 6px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    padding-bottom: 16px;
+  }
+  .main {
+    background-size: 310px;
+    padding-top: 200px;
+  }
+  .firstCard,
+  .secondCard {
+    margin: 0px auto;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  .bigCard,
+  .smallCard {
+    width: 310px;
+    height: 176px;
+    margin-bottom: 16px;
+  }
+}
